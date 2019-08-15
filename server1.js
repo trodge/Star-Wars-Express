@@ -26,7 +26,12 @@ var darthmaul = {
 //
 
 // YOUR CODE GOES HERE
-
+var obiwan = {
+    name: "Obi-Wan Kenobi",
+    role: "Jedi Master",
+    age: 63,
+    forcePoints: 1450
+};
 //
 
 // Routes
@@ -50,6 +55,9 @@ app.get("/darthmaul", function(req, res) {
 // YOUR CODE GOES HERE
 //
 //
+app.get("/obiwan", function(req, res) {
+    res.json(obiwan);
+})
 
 // Listener
 // ===========================================================
